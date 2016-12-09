@@ -1,0 +1,5 @@
+adb push cofface_recovery_twrp.img /data/local/tmp/cofface_recovery_twrp.img 
+adb shell
+su
+dd if=/data/local/tmp/cofface_recovery_twrp.img of=/dev/block/mmcblk0p8
+reboot recovery
